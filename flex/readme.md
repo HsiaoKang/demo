@@ -93,3 +93,4 @@ align-content: **多行下**，沿主轴的空间分配
 
 收缩的比例：flex-shrink，0不做缩放，超出主轴生效，在basis基础上按占用总shrink值的比例做缩放。
 
+元素的扩展和收缩均是根据basis 来做计算
