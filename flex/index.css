@@ -1,0 +1,86 @@
+.axis {
+  display: flex;
+}
+.axis .a {
+  background: #ccc;
+  font-size: 32px;
+}
+.axis .b {
+  background: #666;
+}
+.axis .c {
+  background: #333;
+}
+
+/*  */
+.align {
+  width: 500px;
+  height: 120px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.align > .a {
+  background: #ccc;
+}
+.align > .b {
+  background: #666;
+  display: flex;
+  order: 0;
+  /* flex-wrap: wrap; */
+}
+.align > .c {
+  background: #333;
+}
+
+/*  */
+.flex-container {
+  display: flex;
+  width: 500px;
+  overflow: hidden;
+}
+.flex-container > div {
+  width: 200px;
+  flex-shrink: 1;
+  /* flex: 1 1 0; */
+  /* flex: 1; */
+}
+.flex-container > .a {
+  background: #ccc;
+  /* width: 100px; */
+  flex: 1 1 auto;
+}
+.flex-container > .b {
+  background: #666;
+  flex: 1 0 auto;
+}
+.flex-container > .c {
+  background: #333;
+  flex: 1 4 auto;
+}
+
+/*  */
+.gap {
+  display: flex;
+  width: 200px;
+  flex-flow: row wrap;
+  row-gap: 200px;
+}
+.gap > div {
+  width: 100px;
+  height: 100px;
+  flex: 1 1 auto;
+}
+
+.gap > .a {
+  background: #ccc;
+  /* width: 100px; */
+}
+.gap > .b {
+  background: #666;
+  columns: 2;
+  column-gap: 20px;
+}
+.gap > .c {
+  background: #333;
+}

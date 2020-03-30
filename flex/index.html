@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>轴线</h1>
+    <p>默认 row</p>
+    <div class="axis">
+      <div class="a">1</div>
+      <div class="b">2</div>
+      <div class="c">3</div>
+    </div>
+    <p class="language">阿拉伯文 从右往左输入</p>
+    <button onclick="changeLanguage()">切换方向DIR</button>
+    <input type="text" />
+    <h1>元素排列</h1>
+    <div class="align">
+      <div class="a">child1</div>
+      <div class="b">
+        child2child2child 2child2child2c hild2child2chil d2child2child2child
+        2child2child2child2child 2child2child2child2
+      </div>
+      <div class="c">child3</div>
+    </div>
+    <h1>flex子元素控制</h1>
+    <div class="flex-container">
+      <div class="a">child1</div>
+      <!-- <div class="b">child2child2child2child2child2child2child2child2child2child2child2child2child2child2child2child2child2child2</div> -->
+      <div class="b">child2</div>
+      <div class="c">child3</div>
+    </div>
+    <h1>间隔控制</h1>
+    <div class="gap">
+      <div class="a">child1</div>
+      <div class="b">
+          火狐有效
+      </div>
+      <div class="c">
+        child2 child 2child2child2child  2child2c hild2child2
+        chil d2child2child2child2child2 child2child2child2child2child2
+        child2ch ild2chil d2child2child2ch ild2child2child2child 2child2
+        child2c hild2ch ild2child2chi ld2child2child2c hild2child2child2
+        child 2child2child2ch ild2child2child 2child2child2ch ild2child2
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
